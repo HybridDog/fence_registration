@@ -1,4 +1,4 @@
-[Mod] fence_registration [fence_registration]
+[Mod] fence registration [fence_registration]
 
 This mod adds a function for adding fences.  
 For example to add an acacia wood fence, you only need to write following:  
@@ -12,7 +12,6 @@ minetest.register_fence({fence_of = string[, texture = string, recipe = string]}
 the second param can be used to set custom parts of the node definition, e.g.  
 https://github.com/HybridDog/sumpf/blob/master/sumpf/birke.lua#L81-L82
 
-**Depends:** see [depends.txt](https://raw.githubusercontent.com/HybridDog/fence_registration/master/depends.txt)  
 **License:** see [LICENSE.txt](https://raw.githubusercontent.com/HybridDog/fence_registration/master/LICENSE.txt)  
 **Download:** [zip](https://github.com/HybridDog/fence_registration/archive/master.zip), [tar.gz](https://github.com/HybridDog/fence_registration/tarball/master)  
 
