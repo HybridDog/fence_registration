@@ -47,6 +47,10 @@ function minetest.register_fence(fencedata, extradef)
 	local name = modname..":fence_"..nodename
 	minetest.register_node(":"..name, def)
 
+	if fencedata.add_crafting == false then
+		return
+	end
+
 	local input = fencedata.recipe or origname
 	minetest.register_craft({
 		output = name.." 3",

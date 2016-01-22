@@ -7,7 +7,7 @@ minetest.register_fence({fence_of = "default:acacia_wood"})
 ```
 the syntax looks approximately like this:
 ```
-minetest.register_fence({fence_of = string[, texture = string, recipe = string]}, table)
+minetest.register_fence({fence_of = string[, texture = string, recipe = string, add_crafting = bool]}, table)
 ```
 the second param can be used to set custom parts of the node definition, e.g.  
 https://github.com/HybridDog/sumpf/blob/master/sumpf/birke.lua#L81-L82
