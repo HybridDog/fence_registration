@@ -24,10 +24,11 @@ function minetest.register_fence(fencedata, extradef)
 	def.drawtype = "fencelike"
 	def.paramtype = "light"
 	def.sunlight_propagates = true
+	--[[ a fitting selection box gets added automatically at builtin
 	def.selection_box = {
 		type = "fixed",
 		fixed = {-1/7, -1/2, -1/7, 1/7, 1/2, 1/7},
-	}
+	}--]]
 	if origdef.description then
 		def.description = origdef.description.." fence"
 	end
