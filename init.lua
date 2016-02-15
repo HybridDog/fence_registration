@@ -18,7 +18,7 @@ function minetest.register_fence(fencedata, extradef)
 
 	local def = {}
 	for _,i in pairs(to_copy) do
-		def[i] = origdef[i]
+		def[i] = rawget(origdef, i)
 	end
 
 	def.drawtype = "fencelike"
